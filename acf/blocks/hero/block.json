@@ -1,0 +1,17 @@
+{
+	"name": "acf/hero",
+	"title": "Hero Block",
+	"description": "Hero Block",
+	"style": [ "file:./css/style.min.css" ],
+	"script": "hero",
+	"category": "formatting",
+	"icon": "welcome-widgets-menus",
+	"keywords": ["hero", "header"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "hero.php",
+		"supports": "jsx"
+	},
+		
+	"align": "center"
+}
