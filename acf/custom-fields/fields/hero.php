@@ -13,17 +13,17 @@
 
 $hero = new StoutLogic\AcfBuilder\FieldsBuilder( 'hero' );
 $hero
-    ->addText('prehead')
-	->addWysiwyg('title')
-    ->addWysiwyg('description')
-    ->addFile(
+	->addText( 'prehead' )
+	->addWysiwyg( 'title' )
+	->addWysiwyg( 'description' )
+	->addFile(
 		'lottie_file',
 		array(
 			'return_format' => 'url',
 			'mime_types'    => 'json',
 		)
 	)
-    ->addTrueFalse(
+	->addTrueFalse(
 		'use_lottie',
 		array(
 			'default_value' => 0,

@@ -3,9 +3,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.entry-content{
+
+.entry-content {
 	margin: 0;
 }
+
 .site-header {
 	display: flex;
 	justify-content: space-between;
@@ -20,34 +22,34 @@ body {
 		text-align: end;
 		justify-content: end;
 
-			.nav-menu {
+		.nav-menu {
 
-				li {
+			li {
+
+				a {
+					text-decoration: none;
+					color: $white;
+					padding: 0 16px;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 24px;
+				}
+
+				&:first-of-type {
 
 					a {
-						text-decoration: none;
-						color: $white;
-						padding: 0 16px;
-						font-size: 16px;
-						font-style: normal;
-						font-weight: 500;
-						line-height: 24px;
+						padding-left: 0;
 					}
+				}
 
-					&:first-of-type {
+				&:last-of-type {
 
-						a {
-							padding-left: 0;
-						}
-					}
-
-					&:last-of-type {
-
-						a {
-							padding-right: 0;
-						}
+					a {
+						padding-right: 0;
 					}
 				}
 			}
 		}
 	}
+}

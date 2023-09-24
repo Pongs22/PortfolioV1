@@ -44,7 +44,6 @@
 	.container {
 		position: relative;
 
-
 		.title-content {
 			padding-top: 120px;
 			margin-bottom: 120px;
@@ -62,7 +61,6 @@
 				display: flex;
 				justify-content: space-between;
 				padding-top: 16px;
-				
 
 				.p {
 					max-width: 335px;
@@ -95,6 +93,7 @@
 					}
 				}
 			}
+
 			.char {
 				transform: translateY(-35px);
 				transition: transform 0.1s;

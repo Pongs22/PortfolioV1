@@ -13,22 +13,30 @@
 
 $projects = new StoutLogic\AcfBuilder\FieldsBuilder( 'projects' );
 $projects
-	->addWysiwyg('title')
-    ->addTextarea('description', array(
+	->addWysiwyg( 'title' )
+	->addTextarea(
+		'description',
+		array(
 			'new_lines' => 'br',
-    ))
+		)
+	)
 
-    ->addRepeater('cards', 	
-    array(
-        'button_label' => 'Add Cards',
-        'layout'       => 'block',
-        'max' => 3,
-    ))
+	->addRepeater(
+		'cards',  
+		array(
+			'button_label' => 'Add Cards',
+			'layout'       => 'block',
+			'max'          => 3,
+		)
+	)
 
-    ->addText('title')
-    ->addTextarea('description', array(
+	->addText( 'title' )
+	->addTextarea(
+		'description',
+		array(
 			'new_lines' => 'br',
-    ))
+		)
+	)
 	->addImage(
 		'featured_image',
 		array(

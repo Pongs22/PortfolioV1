@@ -37,3 +37,4 @@ function register_block_script() {
 	}
 }
 add_action( 'init', 'register_block_script' );
+
