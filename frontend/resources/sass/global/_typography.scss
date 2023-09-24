@@ -1,0 +1,81 @@
+@font-face {
+	font-family: Oswald;
+	src: url(../../resources/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+	font-family: LatoBold;
+	src: url(../../resources/resources/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+	font-family: Lato;
+	src: url(../../resources/fonts/Lato-Regular.ttf);
+}
+
+html,
+body {
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+h1 {
+	font-family: Oswald, sans-serif;
+	font-size: 67px;
+	line-height: 61.104px;
+	font-weight: 500;
+	letter-spacing: 1.072px;
+}
+
+h2 {
+	font-family: Oswald, sans-serif;
+	font-size: 41px;
+	line-height: normal;
+	font-weight: 500;
+	letter-spacing: 1.128px;
+}
+
+h3 {
+	font-family: Oswald, sans-serif;
+	font-size: 30px;
+	line-height: normal;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+
+h4 {
+	font-family: Oswald, sans-serif;
+	font-size: 60px;
+	line-height: 66px;
+	font-weight: 600;
+	letter-spacing: -0.9px;
+}
+
+h5 {
+	font-family: Oswald, sans-serif;
+	font-size: 48px;
+	line-height: 52.8px;
+	font-weight: 600;
+	letter-spacing: -0.72px;
+}
+
+h6 {
+	font-family: Oswald, sans-serif;
+	font-size: 40px;
+	line-height: 44px;
+	font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
