@@ -2,7 +2,7 @@
 /**
  * Accordion Template.
  *
- * @package circles_x
+ * @package jm-portfolio
  */
 
 $style = $block['className'] ?? '';

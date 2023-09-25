@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Accordion Template.
  *
- * @package circles_x
+ * @package greydientlab
  */
 
 ?>
@@ -14,10 +13,10 @@ $description = empty( get_field( 'description' ) ) ? 'Your Description Here' : g
 
 ?>
 
-<div class="gl-b-hero-wrapper">
-	<div class="justify-content">
+<div class="gl-b-hero-wrapper ">
+	<div class="container-fluid">
 		<div class="grid-wrapper">
-			<div class="grid-container">
+			<div class="grid-container mx-auto justify-content-center align-items-center">
 				<div class="grid-item" id="item-1"></div>
 				<div class="grid-item" id="item-2"></div>
 				<div class="grid-item" id="item-3"></div>

@@ -1,0 +1,17 @@
+{
+	"name": "acf/contact",
+	"title": "Contact Block",
+	"description": "Contact Block",
+	"style": [ "file:./css/style.min.css" ],
+	"script": "contact",
+	"category": "formatting",
+	"icon": "welcome-widgets-menus",
+	"keywords": ["contact", "works"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "contact.php",
+		"supports": "jsx"
+	},
+		
+	"align": "center"
+}

@@ -49,11 +49,9 @@ function greydientlab_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1'        => esc_html__( 'Primary', 'greydientlab' ),
-			'menu-2'        => esc_html__( 'Login', 'greydientlab' ),
-			'footer-first'  => esc_html__( 'Footer First', 'greydientlab' ),
-			'footer-second' => esc_html__( 'Footer Second', 'greydientlab' ),
-			'footer-bottom' => esc_html__( 'Footer Bottom', 'greydientlab' ),
+			'menu-1'         => esc_html__( 'Primary', 'greydientlab' ),
+			'menu-2'         => esc_html__( 'Login', 'greydientlab' ),
+			'socials-footer' => esc_html__( 'Socials Footer', 'greydientlab' ),
 		)
 	);
 
@@ -180,6 +178,7 @@ function gl_block_assets() {
 	wp_enqueue_script( 'popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js', array(), _GL_VERSION, true );
 	wp_enqueue_script( 'bootstrap-scripts', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', array(), _GL_VERSION, true );
 	wp_enqueue_script( 'components', get_template_directory_uri() . '/frontend/static/js/components.min.js', array(), _GL_VERSION, true );
+	wp_enqueue_script( 'hover3d', get_template_directory_uri() . '/libraries/hover3d/hover3d.min.js', array(), _GL_VERSION, true );
 }
 add_action( 'enqueue_block_assets', 'gl_block_assets' );
 
@@ -378,33 +377,3 @@ function add_menu_link_attributes( $atts, $item, $args ) {
 	return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_menu_link_attributes', 10, 3 );
-
-function cf7_prevent_duplicate_email( $result, $tag ) {
-	$email_field_name = 'email-no-duplicate';
-	$submission       = WPCF7_Submission::get_instance();
-	$wpcf7            = WPCF7_ContactForm::get_current();
-	$form_id          = $wpcf7->id();
-	$form_name        = $wpcf7->name();
-
-	if ( $submission ) {
-
-		if ( 'mindport-subscription' === $form_name ) {
-			$email = $submission->get_posted_data( $email_field_name );
-			global $wpdb;
-
-			// Check if the email already exists in the database.
-			$existing_submission = $wpdb->get_results( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.DirectQuery
-				$wpdb->prepare( 'SELECT * FROM wp_cf7_vdata_entry WHERE name LIKE %s AND value=%s AND cf7_id=%d', $email_field_name, $email, $form_id )
-			);
-
-			if ( $existing_submission ) {
-				$result->invalidate( $tag, 'Email Address already exists!' );
-			}
-		}
-	}
-
-	return $result;
-}
-
-add_filter( 'wpcf7_validate_email*', 'cf7_prevent_duplicate_email', 10, 2 );
-add_filter( 'wpcf7_validate_email', 'cf7_prevent_duplicate_email', 10, 2 );

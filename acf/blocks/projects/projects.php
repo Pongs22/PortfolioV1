@@ -1,25 +1,25 @@
 <?php
-
 /**
  * Projects Template.
  *
- * @package circles_x
+ * @package jm-portfolio
  */
 
 ?>
 
 <?php
-$main_title  = empty( get_field( 'title' ) ) ? 'Your Title Here' : get_field( 'title' );
-$description = empty( get_field( 'description' ) ) ? 'Your Description Here' : get_field( 'description' );
-
+$main_title       = empty( get_field( 'title' ) ) ? 'Your Title Here' : get_field( 'title' );
+$description      = empty( get_field( 'description' ) ) ? 'Your Description Here' : get_field( 'description' );
+$background_color = empty( get_field( 'background_color' ) ) ? '#fff' : get_field( 'background_color' ); 
 ?>
 
-<div class="gl-b-projects-wrapper">
-	<div class="justify-content">
+<div class="gl-b-projects-wrapper" data-bg ="<?php echo esc_html( $background_color ); ?>"  style="background-color : <?php echo esc_attr( $background_color ); ?> " id="worksSection">
+	<div class="container-fluid">
 
 		<img src="<?php echo esc_url( get_block_asset_url( 'projects', 'white-dots.svg' ) ); ?>" class="bgimage white-dots">
 		<img src="<?php echo esc_url( get_block_asset_url( 'projects', 'blue-dots.svg' ) ); ?>" class="bgimage blue-dots">
 		<img src="<?php echo esc_url( get_block_asset_url( 'projects', 'blue-circle.svg' ) ); ?>" class="bgimage blue-circle">
+		<img src="<?php echo esc_url( get_block_asset_url( 'projects', 'white-circles.svg' ) ); ?>" class="bgimage white-circle">
 		<img src="<?php echo esc_url( get_block_asset_url( 'projects', 'orange-circ.png' ) ); ?>" class="bgimage orange-circ">
 		<img src="<?php echo esc_url( get_block_asset_url( 'projects', 'orange-dia.svg' ) ); ?>" class="bgimage orange-dia">
 		<img src="<?php echo esc_url( get_block_asset_url( 'projects', 'white-dia.svg' ) ); ?>" class="bgimage white-dia">
@@ -55,8 +55,6 @@ $description = empty( get_field( 'description' ) ) ? 'Your Description Here' : g
 
 							<?php endwhile; ?>
 						<?php else : ?>
-
-
 						<?php endif; ?>
 					</div>
 				</div>

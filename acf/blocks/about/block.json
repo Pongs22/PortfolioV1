@@ -1,0 +1,17 @@
+{
+	"name": "acf/about",
+	"title": "About Block",
+	"description": "About Block",
+	"style": [ "file:./css/style.min.css" ],
+	"script": "about",
+	"category": "formatting",
+	"icon": "welcome-widgets-menus",
+	"keywords": ["about", "works"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "about.php",
+		"supports": "jsx"
+	},
+		
+	"align": "center"
+}

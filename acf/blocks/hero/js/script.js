@@ -35,17 +35,16 @@ jQuery( function( $ ) {
 
 	gsap.to( '.button-description .p', {
 		y: 0,
-		stagger: 0.5,
+		stagger: 0.2,
 		delay: 1.8,
-		duration: .1,
 		opacity: 1,
 	} );
 
 	gsap.to( '.button-description a', {
 		y: 0,
-		stagger: 0.5,
-		delay: 2,
+		stagger: 0.2,
 		duration: .1,
+		delay: 2,
 		opacity: 1,
 	} );
 } );

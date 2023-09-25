@@ -13,6 +13,7 @@
 
 $projects = new StoutLogic\AcfBuilder\FieldsBuilder( 'projects' );
 $projects
+	->addColorPicker( 'background_color' )
 	->addWysiwyg( 'title' )
 	->addTextarea(
 		'description',
@@ -22,7 +23,7 @@ $projects
 	)
 
 	->addRepeater(
-		'cards',  
+		'cards',
 		array(
 			'button_label' => 'Add Cards',
 			'layout'       => 'block',

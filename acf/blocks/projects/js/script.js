@@ -1,5 +1,5 @@
 /* global jQuery gsap SplitType*/
-jQuery( function( $ ) {
+jQuery( function( ) {
 	const tl = gsap.timeline(
 		{
 			scrollTrigger: {
@@ -10,9 +10,10 @@ jQuery( function( $ ) {
 			},
 		} );
 	tl.from( '.orange-circ', { x: '30%', duration: .25 } )
-		.from( '.blue-circle', { y: '30%', duration: .25 } )
+		.from( '.blue-circle', { y: '-30%', duration: .25 } )
 		.from( '.blue-dots', { y: '-10%', duration: .25 } )
 		.from( '.white-dia', { x: '-30%', duration: .25 } )
+		.from( '.white-circle', { y: '-30%', duration: .25 } )
 		.from( '.orange-dia', { y: '30%', duration: .25 } )
 		.from( '.white-dots', { y: '30%', duration: .25 } );
 
@@ -60,6 +61,17 @@ jQuery( function( $ ) {
 		},
 	} );
 
+	gsap.to( '.white-circle', {
+		opacity: 1,
+		scrollTrigger: {
+			trigger: '.gl-b-projects-wrapper',
+			start: 'center-=125px center',
+			end: 'center-=75px center',
+			stagger: 0.2,
+			scrub: 1,
+		},
+	} );
+
 	gsap.to( '.white-dia', {
 		opacity: 1,
 		scrollTrigger: {
@@ -101,7 +113,6 @@ jQuery( function( $ ) {
 		y: 0,
 		stagger: 0.5,
 		delay: 0.75,
-		duration: .1,
 		opacity: 1,
 		scrollTrigger: {
 			trigger: '.gl-b-projects-wrapper',

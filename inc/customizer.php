@@ -1,6 +1,6 @@
 <?php
 /**
- * jm-portfolio Theme Customizer
+ * Jm-portfolio Theme Customizer
  *
  * @package jm-portfolio
  */

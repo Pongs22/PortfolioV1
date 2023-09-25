@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package jm-portfolio
+ * @package greydientlab
  */
 
 ?>
@@ -23,16 +23,20 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'jm-portfolio' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'greydientlab' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();?>
+			the_custom_logo();
+			?>
 		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'jm-portfolio' ); ?></button>
+		<div class="nav-bar">
+		<button id="btnWorks">Works</button>
+		<button id="btnContact">Contact</button>
+		</div>
+		<!-- <nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'greydientlab' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(
@@ -41,5 +45,6 @@
 				)
 			);
 			?>
+			-->
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
