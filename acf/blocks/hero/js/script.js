@@ -47,4 +47,24 @@ jQuery( function( $ ) {
 		delay: 2,
 		opacity: 1,
 	} );
+
+	gsap.to( '.image-container', {
+		y: 0,
+		stagger: 0.2,
+		delay: 2.25,
+		opacity: 1,
+	} );
+
+	$(document).ready(function() {
+		var lottiePlayer = $('lottie-player');
+		var delayInSeconds = 2.25;
+		lottiePlayer.stop();
+	  
+		// Delay the autoplay
+		setTimeout(function() {
+			$('lottie-player').get(0).play();// Set autoplay to true to start the animation
+		}, delayInSeconds * 1000); // Convert seconds to milliseconds
+
+	  });
+
 } );

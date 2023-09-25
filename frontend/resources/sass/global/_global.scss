@@ -16,7 +16,7 @@ body {
 .site-header {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 57px;
+	padding: 10px 120px;
 	background-color: $darkblue-05;
 
 
@@ -26,35 +26,52 @@ body {
 		align-items: end;
 		text-align: end;
 		justify-content: end;
+	}
 
-		.nav-menu {
+	.nav-bar {
+		display: flex;
+		align-items: center;
+		justify-content: end;
 
-			li {
 
-				a {
-					text-decoration: none;
-					color: $white;
-					padding: 0 16px;
-					font-size: 16px;
-					font-style: normal;
-					font-weight: 500;
-					line-height: 24px;
-				}
+		#btnContact {
+			background-color: $orange-05;
+			border: none;
+			padding: 12px 16px;
+			border-radius: 4px;
+			color: $white;
+			font-family: Lato, sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: 1.04px;
+			transition: 0.3s;
 
-				&:first-of-type {
-
-					a {
-						padding-left: 0;
-					}
-				}
-
-				&:last-of-type {
-
-					a {
-						padding-right: 0;
-					}
-				}
+			&:hover {
+				background-color: $orange-03;
 			}
+		}
+
+		#btnWorks, #btnAbout{
+
+			background-color: transparent;
+			border: none;
+			margin: 0 75px 0 0;
+			padding: 0;
+			color: $white;
+			font-family: Lato, sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: 1.04px;
+			transition: 0.3s;
+
+			&:hover{
+				color: $blue-05;
+			}
+
 		}
 	}
 }

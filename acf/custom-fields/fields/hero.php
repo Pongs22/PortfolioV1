@@ -16,17 +16,17 @@ $hero
 	->addText( 'prehead' )
 	->addWysiwyg( 'title' )
 	->addWysiwyg( 'description' )
+	->addTrueFalse(
+		'use_lottie',
+		array(
+			'default_value' => 0,
+		)
+	)
 	->addFile(
 		'lottie_file',
 		array(
 			'return_format' => 'url',
 			'mime_types'    => 'json',
-		)
-	)
-	->addTrueFalse(
-		'use_lottie',
-		array(
-			'default_value' => 0,
 		)
 	)
 	->conditional( 'use_lottie', '==', 1 )

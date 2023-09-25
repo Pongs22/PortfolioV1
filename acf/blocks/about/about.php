@@ -14,7 +14,7 @@ $button           = empty( get_field( 'button_name' ) ) ? 'Button Name' : get_fi
 $background_color = empty( get_field( 'background_color' ) ) ? '#fff' : get_field( 'background_color' ); 
 ?>
 
-<div class="gl-b-about-wrapper container-fluid" data-bg ="<?php echo esc_html( $background_color ); ?>"  style="background-color : <?php echo esc_attr( $background_color ); ?>">
+<div class="gl-b-about-wrapper container-fluid" data-bg ="<?php echo esc_html( $background_color ); ?>"  style="background-color : <?php echo esc_attr( $background_color ); ?>" id="aboutSection">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-6 content-wrapper">

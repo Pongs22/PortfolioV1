@@ -24,6 +24,9 @@
 		$( '#btnContact' ).click( function() {
 			scrollToSection( '#contactSection' );
 		} );
+		$( '#btnAbout' ).click( function() {
+			scrollToSection( '#aboutSection' );
+		} );
 		function scrollToSection( sectionId ) {
 			$( 'html, body' ).animate( {
 				scrollTop: $( sectionId ).offset().top,

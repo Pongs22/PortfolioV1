@@ -143,6 +143,7 @@ function greydientlab_scripts() {
 	wp_enqueue_style( 'greydientlab-style', get_stylesheet_uri(), array(), _GL_VERSION );
 	wp_style_add_data( 'greydientlab-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/frontend/static/css/main.min.css', array(), _GL_VERSION );
+	wp_enqueue_script( 'lottie-interactivity', get_template_directory_uri() . '/libraries/lottie/lottie-interactivity.min.js', array(), _GL_VERSION, true );
 
 	wp_enqueue_script( 'greydientlab-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _GL_VERSION, true );
 	wp_enqueue_script( 'gsap', get_template_directory_uri() . '/libraries/gsap/gsap.min.js', array(), _GL_VERSION, true );
@@ -179,6 +180,7 @@ function gl_block_assets() {
 	wp_enqueue_script( 'bootstrap-scripts', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', array(), _GL_VERSION, true );
 	wp_enqueue_script( 'components', get_template_directory_uri() . '/frontend/static/js/components.min.js', array(), _GL_VERSION, true );
 	wp_enqueue_script( 'hover3d', get_template_directory_uri() . '/libraries/hover3d/hover3d.min.js', array(), _GL_VERSION, true );
+	wp_enqueue_script( 'lottie', get_template_directory_uri() . '/libraries/lottie/lottie-player.min.js', array(), _GL_VERSION, true );
 }
 add_action( 'enqueue_block_assets', 'gl_block_assets' );
 

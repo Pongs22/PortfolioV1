@@ -26,7 +26,7 @@
 
 				</div>
 				<div class="col-12 col-md-4 copyright">
-					<p>Built and Designed by me &copy;2023 </p>
+					<p>Built and Designed by JM &copy; 2023 </p>
 				</div>
 				<div class="col-12 col-md-4 social-media">
 				<?php 

@@ -103,7 +103,7 @@ $description = empty( get_field( 'description' ) ) ? 'Your Description Here' : g
 			</div>
 		<div class="image-container">
 			<?php if ( get_field( 'use_lottie' ) ) : ?>
-							<lottie-player src="<?php the_field( 'lottie_file' ); ?>" background="transparent" speed="1" loop autoplay></lottie-player>
+							<lottie-player id="lottie" src="<?php the_field( 'lottie_file' ); ?>" background="transparent" speed="1" loop></lottie-player>
 						<?php elseif ( get_field( 'featured_image' ) ) : ?>
 							<?php echo wp_get_attachment_image( get_field( 'featured_image' ), 'full' ); ?>
 						<?php else : ?>
