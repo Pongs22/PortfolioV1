@@ -55,16 +55,12 @@ jQuery( function( $ ) {
 		opacity: 1,
 	} );
 
-	$(document).ready(function() {
-		var lottiePlayer = $('lottie-player');
-		var delayInSeconds = 2.25;
+	$( document ).ready( function() {
+		const lottiePlayer = $( 'lottie-player' );
+		const delayInSeconds = 2.25;
 		lottiePlayer.stop();
-	  
-		// Delay the autoplay
-		setTimeout(function() {
-			$('lottie-player').get(0).play();// Set autoplay to true to start the animation
-		}, delayInSeconds * 1000); // Convert seconds to milliseconds
-
-	  });
-
+		setTimeout( function() {
+			$( 'lottie-player' ).get( 0 ).play();
+		}, delayInSeconds * 1000 );
+	} );
 } );

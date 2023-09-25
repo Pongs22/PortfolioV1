@@ -18,13 +18,13 @@
 	} );
 	/* custom navbar */
 	$( document ).ready( function() {
-		$( '#btnWorks' ).click( function() {
+		$( '#works' ).click( function() {
 			scrollToSection( '#worksSection' );
 		} );
-		$( '#btnContact' ).click( function() {
+		$( '#contact' ).click( function() {
 			scrollToSection( '#contactSection' );
 		} );
-		$( '#btnAbout' ).click( function() {
+		$( '#about' ).click( function() {
 			scrollToSection( '#aboutSection' );
 		} );
 		function scrollToSection( sectionId ) {

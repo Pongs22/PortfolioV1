@@ -32,9 +32,9 @@
 			?>
 		</div><!-- .site-branding -->
 		<div class="nav-bar">
-		<button id="btnAbout">About</button>
-		<button id="btnWorks">Works</button>
-		<button id="btnContact">Contact Me</button>
+		<button id="about">About</button>
+		<button id="works">Works</button>
+		<button id="contact">Contact Me</button>
 		</div>
 		<!-- <nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'greydientlab' ); ?></button>
