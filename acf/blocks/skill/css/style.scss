@@ -100,3 +100,71 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+
+
+	.gl-b-skill-wrapper {
+		padding: 80px 0;
+
+		.container {
+
+			.row {
+
+				.skill-description-wrapper {
+
+					.description {
+						max-width: 100%;
+						align-items: center;
+						margin-left: auto;
+						margin-right: auto;
+
+						p {
+							max-width: 100%;
+							font-size: 18px;
+							font-weight: 500;
+							line-height: 25px;
+							letter-spacing: 0.18px;
+						}
+					}
+				}
+
+				.skill-icon-wrapper {
+					padding-top: 48px;
+
+					.cards-wrapper {
+						margin-top: 24px;
+
+						&:first-child,
+						&:nth-child(2) {
+							margin-top: 0;
+						}
+					}
+
+					.cards {
+
+						background-color: $darkblue-05;
+						padding: 25px 0;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+
+						p {
+							color: $white;
+							font-size: 16px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 20px;
+							letter-spacing: 0.2px;
+						}
+
+						img {
+							max-width: 100px;
+							padding-bottom: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

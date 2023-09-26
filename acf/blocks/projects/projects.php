@@ -46,7 +46,7 @@ $background_color = empty( get_field( 'background_color' ) ) ? '#fff' : get_fiel
 									<div class="cards">
 										<h3><?php echo esc_html( $main_title ); ?></h3>
 										<p><?php echo esc_html( $description ); ?></p>
-										<a>Visit Live Site</a>
+										<a href="<?php the_sub_field( 'button_link' ); ?>" target="blank"><?php echo esc_html( the_sub_field( 'button_name' ) ); ?></a>
 										<?php if ( get_sub_field( 'featured_image' ) ) : ?>
 											<?php echo wp_get_attachment_image( get_sub_field( 'featured_image' ), 'full' ); ?>
 										<?php endif; ?>

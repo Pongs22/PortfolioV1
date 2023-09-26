@@ -15,7 +15,7 @@
 	<div class="container-fluid footer">
 		<div class="container align-items-center">
 			<div class="row">
-				<div class="col-12 col-md-4 footer-logo">
+				<div class="col-12 col-md-6 col-lg-4 footer-logo order-1">
 					<?php
 					the_custom_logo(); 
 					?>
@@ -25,10 +25,10 @@
 					</div>
 
 				</div>
-				<div class="col-12 col-md-4 copyright">
+				<div class="col-12 col-md-12 col-lg-4 copyright order-3 order-lg-2">
 					<p>Built and Designed by JM &copy; 2023 </p>
 				</div>
-				<div class="col-12 col-md-4 social-media">
+				<div class="col-12 col-md-6 col-lg-4 social-media order-2 order-lg-3">
 				<?php 
 							wp_nav_menu(
 								array(

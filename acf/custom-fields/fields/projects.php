@@ -46,6 +46,8 @@ $projects
 			'return_format' => 'id',
 		)
 	)
+	->addText( 'button_name' )
+	->addUrl( 'button_link' )
 	->setLocation( 'block', '==', 'acf/projects' );
 
 return $projects;

@@ -4,12 +4,18 @@
 	background-color: $darkblue-05;
 	padding-top: 175px;
 
+
+	.container {
+		padding: 0 12px;
+
+	}
+
 	.contact {
 		justify-content: center;
 		background-color: $darkblue-01;
 		margin-top: -300px;
 		position: absolute;
-		width: 100%;
+		width: 97.5%;
 		z-index: 5;
 
 		h2 {
@@ -53,7 +59,6 @@
 				padding: 12px 27px;
 				background-color: $orange-05;
 				border-radius: 4px;
-				transition: 0.2s;
 
 				&:hover {
 					background-color: $orange-03;
@@ -66,5 +71,71 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.gl-b-contact-wrapper {
+		background-color: $darkblue-05;
+		padding-top: 150px;
+
+		.contact {
+			justify-content: center;
+			background-color: $darkblue-01;
+			margin-top: -250px;
+			position: absolute;
+			width: 97%;
+			z-index: 5;
+			padding: 40px;
+
+			h2 {
+				font-size: 28px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 25.536px;
+				letter-spacing: 0.448px;
+				color: $white;
+			}
+
+			p {
+				padding-top: 12px;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 25px;
+				max-width: 419px;
+			}
+
+			.body-container {
+				padding: 0;
+
+				.col-8,
+				.col-4 {
+					padding: 0;
+				}
+			}
+
+			.button-wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: end;
+
+				a {
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					letter-spacing: 1.12px;
+					padding: 8px 16px;
+				}
+			}
+		}
+
+		.featured-image-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 }
