@@ -78,7 +78,7 @@
 					opacity: 0;
 				}
 
-				a {
+				button {
 					padding: 19px 47px;
 					background-color: $orange-05;
 					color: $white;
@@ -92,6 +92,7 @@
 					text-decoration: none;
 					transition: 0.3s;
 					opacity: 0;
+					border: none;
 
 					&:hover {
 						background-color: $orange-03;

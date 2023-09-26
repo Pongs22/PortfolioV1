@@ -21,6 +21,9 @@
 		$( '#works' ).click( function() {
 			scrollToSection( '#worksSection' );
 		} );
+		$( '#workshead' ).click( function() {
+			scrollToSection( '#worksSection' );
+		} );
 		$( '#contact' ).click( function() {
 			scrollToSection( '#contactSection' );
 		} );

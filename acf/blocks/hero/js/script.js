@@ -40,7 +40,7 @@ jQuery( function( $ ) {
 		opacity: 1,
 	} );
 
-	gsap.to( '.button-description a', {
+	gsap.to( '.button-description button', {
 		y: 0,
 		stagger: 0.2,
 		duration: .1,

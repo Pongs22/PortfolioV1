@@ -39,6 +39,7 @@ $hero
 		)
 	)
 	->conditional( 'use_lottie', '==', 0 )
+	->addText( 'button_name' )
 	->setLocation( 'block', '==', 'acf/hero' );
 
 return $hero;

@@ -1,0 +1,17 @@
+{
+	"name": "acf/skill",
+	"title": "Skills Block",
+	"description": "Skills Block",
+	"style": [ "file:./css/style.min.css" ],
+	"script": "skill",
+	"category": "formatting",
+	"icon": "welcome-widgets-menus",
+	"keywords": ["skill", "header"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "skill.php",
+		"supports": "jsx"
+	},
+		
+	"align": "center"
+}

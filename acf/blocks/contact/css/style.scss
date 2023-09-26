@@ -2,11 +2,12 @@
 
 .gl-b-contact-wrapper {
 	background-color: $darkblue-05;
+	padding-top: 175px;
 
 	.contact {
 		justify-content: center;
 		background-color: $darkblue-01;
-		margin-top: -125px;
+		margin-top: -300px;
 		position: absolute;
 		width: 100%;
 		z-index: 5;
@@ -57,9 +58,13 @@
 				&:hover {
 					background-color: $orange-03;
 				}
-
 			}
-
 		}
+	}
+
+	.featured-image-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }

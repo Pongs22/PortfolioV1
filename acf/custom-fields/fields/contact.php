@@ -17,6 +17,14 @@ $contact
 		->addText( 'description' )
 		->addText( 'button_name' )
 		->addUrl( 'button_link' )
+		->addImage(
+			'featured_image',
+			array(
+				'preview_size'  => 'medium',
+				'label'         => __( 'Featured Image', 'greydientlab' ),
+				'return_format' => 'id',
+			)
+		)
 	->setLocation( 'block', '==', 'acf/contact' );
 
 return $contact;

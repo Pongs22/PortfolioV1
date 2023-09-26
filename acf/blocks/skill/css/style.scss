@@ -1,0 +1,102 @@
+@import "../../../../frontend/resources/sass/variables/colors";
+
+.gl-b-skill-wrapper {
+	padding: 180px 0;
+
+	.container {
+
+		.row {
+
+			.skill-description-wrapper {
+				margin-top: auto;
+				margin-bottom: auto;
+
+				.description {
+					display: flex;
+					flex-direction: column;
+					max-width: 463px;
+
+					h4 {
+						font-size: 36px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: normal;
+						letter-spacing: 1.8px;
+						margin-bottom: 40px;
+					}
+
+					p {
+						color: $darkblue-05;
+						font-size: 20px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 25px;
+						letter-spacing: 0.2px;
+					}
+
+					ul {
+						margin: 0;
+						padding: 8px 0 0 0;
+						list-style-type: none;
+						columns: 2;
+						-webkit-columns: 2;
+						-moz-columns: 2;
+
+						li {
+							display: block;
+							padding-top: 16px;
+							color: $darkblue-05;
+							font-size: 20px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 25px;
+							letter-spacing: 0.2px;
+
+							&::before {
+								content: url(../img/bullet.svg);
+								padding-right: 12px;
+							}
+
+
+						}
+
+					}
+				}
+			}
+
+			.skill-icon-wrapper {
+
+				.cards-wrapper {
+					margin-top: 24px;
+
+					&:first-child,
+					&:nth-child(2) {
+						margin-top: 0;
+					}
+				}
+
+				.cards {
+
+					background-color: $darkblue-05;
+					padding: 50px 0;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					p {
+						color: $white;
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 20px;
+						letter-spacing: 0.2px;
+					}
+
+					img {
+						padding-bottom: 16px;
+					}
+				}
+			}
+		}
+	}
+}

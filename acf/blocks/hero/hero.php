@@ -10,6 +10,7 @@
 <?php
 $main_title  = empty( get_field( 'title' ) ) ? 'Your Title Here' : get_field( 'title' );
 $description = empty( get_field( 'description' ) ) ? 'Your Description Here' : get_field( 'description' );
+$btn_name    = empty( get_field( 'button_name' ) ) ? 'Button Name' : get_field( 'button_name' );
 
 ?>
 
@@ -98,7 +99,7 @@ $description = empty( get_field( 'description' ) ) ? 'Your Description Here' : g
 				<div id="split"><?php echo wp_kses_post( $main_title ); ?></div>
 				<div class="button-description">
 					<div class="p"><?php echo wp_kses_post( $description ); ?></div>
-					<a href="#">View Projects</a>
+					<button id="workshead"><?php echo esc_html( $btn_name ); ?></button>
 				</div>
 			</div>
 		<div class="image-container">

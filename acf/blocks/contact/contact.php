@@ -30,8 +30,12 @@ $button      = empty( get_field( 'button_name' ) ) ? 'Button Name' : get_field( 
 		</div>
 	</div>
 	<div class="container">
-	<div class="featured-image-wrapper">
-			<img src="<?php echo esc_url( get_block_asset_url( 'contact', 'footer-featured-image.png' ) ); ?>" alt="">
+		<div class="featured-image-wrapper">
+			<?php if ( get_field( 'featured_image' ) ) : ?>
+				<?php echo wp_get_attachment_image( get_field( 'featured_image' ), 'full' ); ?>
+			<?php else : ?>
+				<img src="<?php echo esc_url( get_block_asset_url( 'contact', 'footer-featured-image.png' ) ); ?>" alt="">
+			<?php endif; ?>
 		</div>
 	</div>
 </div>
