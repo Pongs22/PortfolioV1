@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Accordion Template.
  *
@@ -8,9 +9,9 @@
 ?>
 
 <?php
-$main_title  = empty( get_field( 'title' ) ) ? 'Your Title Here' : get_field( 'title' );
-$description = empty( get_field( 'description' ) ) ? 'Your Description Here' : get_field( 'description' );
-$btn_name    = empty( get_field( 'button_name' ) ) ? 'Button Name' : get_field( 'button_name' );
+$main_title  = empty(get_field('title')) ? 'Your Title Here' : get_field('title');
+$description = empty(get_field('description')) ? 'Your Description Here' : get_field('description');
+$btn_name    = empty(get_field('button_name')) ? 'Button Name' : get_field('button_name');
 
 ?>
 
@@ -93,26 +94,26 @@ $btn_name    = empty( get_field( 'button_name' ) ) ? 'Button Name' : get_field( 
 		</div>
 		<div class="container">
 			<div class="title-content">
-				<?php if ( get_field( 'prehead' ) ) : ?>
-					<h3 id="splittext"><?php echo esc_html( get_field( 'prehead' ) ); ?></h3>
+				<?php if (get_field('prehead')) : ?>
+					<h3 id="splittext"><?php echo esc_html(get_field('prehead')); ?></h3>
 				<?php endif; ?>
-				<div id="split"><?php echo wp_kses_post( $main_title ); ?></div>
+				<div id="split"><?php echo wp_kses_post($main_title); ?></div>
 				<div class="button-description">
-					<div class="p"><?php echo wp_kses_post( $description ); ?></div>
-					<button id="workshead"><?php echo esc_html( $btn_name ); ?></button>
+					<div class="p"><?php echo wp_kses_post($description); ?></div>
+					<button id="workshead"><?php echo esc_html($btn_name); ?></button>
 				</div>
 			</div>
-		<div class="image-container">
-			<?php if ( get_field( 'use_lottie' ) ) : ?>
-							<lottie-player id="lottie" src="<?php the_field( 'lottie_file' ); ?>" background="transparent" speed="1" loop></lottie-player>
-						<?php elseif ( get_field( 'featured_image' ) ) : ?>
-							<?php echo wp_get_attachment_image( get_field( 'featured_image' ), 'full' ); ?>
-						<?php else : ?>
-							<img src="<?php echo esc_url( get_block_asset_url( 'hero', 'Picture.jpg' ) ); ?>">
-						<?php endif; ?>
+			<div class="image-container">
+				<?php if (get_field('use_lottie')) : ?>
+					<lottie-player id="lottie" src="<?php the_field('lottie_file'); ?>" background="transparent" speed="1" loop></lottie-player>
+				<?php elseif (get_field('featured_image')) : ?>
+					<?php echo wp_get_attachment_image(get_field('featured_image'), 'full'); ?>
+				<?php else : ?>
+					<img src="<?php echo esc_url(get_block_asset_url('hero', 'Picture.jpg')); ?>">
+				<?php endif; ?>
+			</div>
 		</div>
-	</div>
 
-</div>
+	</div>
 
 </div>
